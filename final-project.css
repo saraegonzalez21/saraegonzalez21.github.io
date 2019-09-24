@@ -1,0 +1,276 @@
+
+body {
+    font-family: 'Open Sans Condensed', sans-serif;;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: 600;
+}
+
+/* Nav Styling */
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.5em;
+    background-color: rgb(226, 223, 223);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+hr {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.nav-button:link {
+    color: black;
+    padding: .75em .5em .75em .5em;
+    text-decoration: none;
+}
+
+.nav-button:hover {
+    color: rgb(56, 55, 55)
+}
+
+.nav-button:visited {
+    color: black;
+}
+
+/* Body Styling */
+
+.body {
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+}
+
+/* Post Syling */
+
+.post-box {
+    border: 1px solid black;
+    margin: 2em;
+    padding: 1em;
+    display: inline-block;
+    width: 75%;
+    height: 100%;
+}
+
+h2 {
+    text-align: center;
+
+}
+
+.photo {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    text-align: center;
+}
+
+/* List Styling */
+
+li {
+    list-style-type: disc;
+}
+
+ol {
+    list-style-type: disc;
+}
+
+/* Continue Reading Styling */
+
+.continue-reading:link  {
+    color: black;
+    justify-content: end;
+    padding: .75em .5em .75em .5em;
+    border: 1px solid black;
+    background-color: rgb(226, 223, 223);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-decoration: none;
+}
+
+.continue-reading:visited {
+    color: black;
+}
+
+.continue-reading:hover  {
+    background-color: rgb(56, 55, 55);
+    color: white;
+}
+
+/* Side Bar Styling */
+
+.side-bar {
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid black;
+    margin: 2em;
+    align-items: center;
+    width: 25%;
+    height: 100%;
+    padding: 1em;
+}
+
+/* Search Styling */
+
+.search-bar {
+    align-self: center;
+}
+
+.search {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.side-bar input[type=text] {
+    width: 70%;
+    text-align: center;
+    height: 2.5em;
+    font-size: .5em;
+    margin-top: 2em;
+    border: 1px solid rgb(197, 194, 194); 
+}
+
+.search-btn {
+    background-color: rgb(197, 194, 194);
+    height: 3em;
+    font-size: .5em;
+    margin-top: 2em;
+    margin-left: 0em !important;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* About Styling */
+
+.about {
+    text-align: center;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+.about-image {
+    width: 100%;
+    height: 100%;
+}
+
+/* Footer Styling */
+
+.contact {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 2em;
+}
+
+/* Contact page styling */
+
+input[name=yourname] {
+    background-color: rgb(226, 223, 223);
+    border: none;
+    height: 3em;
+    width: 30%;
+    color: black;
+}
+
+input[name=youremail] {
+    background-color: rgb(226, 223, 223);
+    border: none;
+    height: 3em;
+    width: 30%;
+    color: black;
+}
+
+input[name=subject] {
+    width: 100%;
+    height: 3em;
+    background-color: rgb(226, 223, 223);
+    border: none;
+    color: black;
+}
+
+input[name=yourmessage] {
+    width: 100%;
+    height: 20em;
+    background-color: rgb(226, 223, 223);
+    border: none;
+    color: black;
+    vertical-align: text-top;
+}
+
+.post-box input {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+input[name=submit] {
+    background-color: rgb(197, 194, 194);
+    padding: 1em;
+    font-weight: 600;
+    font-size: .75em;
+}
+
+/* Tablet Sizing Styling */
+
+@media all and (max-width:1164px) {
+    .body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .post-box {
+        width: 100%;
+    }
+
+    .side-bar {
+        width: 100%;
+    }
+
+    .side-bar input[type=text] {
+        width: 100%;
+        text-align: center;
+        height: 2.5em;
+    }
+    
+    .search-btn {
+        justify-content: center;
+        display: flex;
+        width: 100%;
+    }
+}
+
+/* Mobile Sizing Styling */
+
+@media all and (max-width:500px) {
+    .body {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .post-box {
+        width: 100%;
+    }
+    
+    .side-bar {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .search-box {
+        width: 100%;
+
+    }
+}
